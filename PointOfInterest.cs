@@ -30,4 +30,7 @@ public class PointOfInterest {
         Latitude = latitude;
 
     }
+    public string GetGoogleMapsUrl() {
+        return "https://www.google.com/maps/place/"+Name?.Replace(" ","+")+"/@"+Latitude+","+Longitude+",15z/";
+    }
 }
