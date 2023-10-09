@@ -4,13 +4,7 @@ namespace CSharpDiscovery.Quest01
     {
         public static string RemoveSpaces(string str)
         {
-           string res = "";
-           for (int i = 0; i < str.Length; i++) {
-                if (str[i] != ' ') {
-                    res += str[i];
-                }
-           }
-           return res;
+            return str.Trim();
         }
     }
 }
