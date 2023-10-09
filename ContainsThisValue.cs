@@ -4,7 +4,7 @@ namespace CSharpDiscovery.Quest02
     {
         public static bool ContainsThisValue(int[] tab, int value)
         {
-            if (value == 0) {
+            if (value == 0 || tab == null) {
                 return false;
             }
             return tab.Contains(value);
