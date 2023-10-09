@@ -17,6 +17,6 @@ public class PointOfInterest {
     }
 
     static PointOfInterest() {
-        GoogleMapsUrlTemplate = "https://www.google.com/maps/search/?api=1&query={0},{1}";
+        GoogleMapsUrlTemplate = "https://www.google.com/maps/place/{0}/@{1},{2},15z/";
     }
 }
