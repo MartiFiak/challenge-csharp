@@ -3,6 +3,8 @@ namespace CSharpDiscovery.Quest04;
 public class HybridCar : Car, IElectricCar, IThermalCar
 {
     public HybridCar() : base() {
+        BatteryLevel = 100;
+        FuelLevel = 100;
     }
     public HybridCar(string model, string brand, string color, int currentSpeed = 0) : base(model, brand, color ,currentSpeed){
     }
