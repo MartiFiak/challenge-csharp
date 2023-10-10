@@ -9,15 +9,15 @@ public class HybridCar : Car, IElectricCar, IThermalCar
     public int FuelLevel {get;set;}
     public int BatteryLevel { get; set; }
     public int GetFuelLevel () {
-        FuelLevel = 100;
         return FuelLevel;
     }
     public void FillUp() {
+        FuelLevel = 100;
     }
     public void Recharge() {
+        BatteryLevel = 100;
     }
     public int GetBatteryLevel() {
-        BatteryLevel = 100;
         return BatteryLevel;
     }
     public override string ToString()
