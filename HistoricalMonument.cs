@@ -1,6 +1,6 @@
 namespace CSharpDiscovery.Quest03;
 
-public class HistoricalMonument : PointOfInterest {
+class HistoricalMonument : PointOfInterest {
     public int BuildYear {get; set;}
     public HistoricalMonument(string name, double longitude, double latitude, int buildYear) : base() {
         Latitude = latitude;
