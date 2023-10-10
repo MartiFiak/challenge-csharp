@@ -20,6 +20,6 @@ public class HybridCar : Car, IElectricCar, IThermalCar
     }
     public override string ToString()
     {
-        return base.ToString()+Color+" "+Brand+" "+Model+", Battery: "+BatteryLevel+"%, Fuel: "+FuelLevel+"%";
+        return Color+" "+Brand+" "+Model+", Battery: "+BatteryLevel+"%, Fuel: "+FuelLevel+"%";
     }
 }
