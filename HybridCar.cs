@@ -9,14 +9,14 @@ public class HybridCar : Car, IElectricCar, IThermalCar
     public HybridCar(string model, string brand, string color, int currentSpeed = 0) : base(model, brand, color ,currentSpeed){
     }
     public int GetFuelLevel () {
-        return FuelLevel;
+        return FuelLevel=100;
     }
     public void FillUp() {
     }
     public void Recharge() {
     }
     public int GetBatteryLevel() {
-        return BatteryLevel;
+        return BatteryLevel=100;
     }
     public override string ToString()
     {
