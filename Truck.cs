@@ -17,8 +17,8 @@ public class Truck : Vehicule {
     }
     public override void Accelerate(int Speed)
     {
-       if ((CurrentSpeed + Speed) >= 180) {
-        CurrentSpeed = 180;
+       if ((CurrentSpeed + Speed) >= 100) {
+        CurrentSpeed = 100;
        }
        else {
         CurrentSpeed += Speed;
