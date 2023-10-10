@@ -4,7 +4,7 @@ public class HistoricalMonument : PointOfInterest {
     public int BuildYear {get; set;}
     public HistoricalMonument() {
     }
-    public HistoricalMonument(string name, double longitude, double latitude, int buildYear) : base() {
+    public HistoricalMonument(string name, double latitude, double longitude, int buildYear) : base() {
         Latitude = latitude;
         Longitude = longitude;
         Name = name;
