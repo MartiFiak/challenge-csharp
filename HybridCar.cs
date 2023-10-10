@@ -4,19 +4,21 @@ public class HybridCar : Car, IElectricCar, IThermalCar
 {
     public HybridCar() : base() {
     }
-    public int FuelLevel { get; set; } = 100;
-    public int BatteryLevel { get; set; } = 100;
     public HybridCar(string model, string brand, string color, int currentSpeed = 0) : base(model, brand, color ,currentSpeed){
     }
+    public int FuelLevel {get;set;}
+    public int BatteryLevel { get; set; }
     public int GetFuelLevel () {
-        return FuelLevel=100;
+        FuelLevel = 100;
+        return FuelLevel;
     }
     public void FillUp() {
     }
     public void Recharge() {
     }
     public int GetBatteryLevel() {
-        return BatteryLevel=100;
+        BatteryLevel = 100;
+        return BatteryLevel;
     }
     public override string ToString()
     {
